@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 90%;
+    /* border: 2px solid red; */
+    max-width: 700px;
+    margin: 2rem;
+}
+#input-form{
+    width: 100%;
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid black;
+    padding: 4px 8px;
+    border-radius: 15px;
+    margin: 1rem 0;
+}
+#input-form input{
+    /* width: 100%; */
+    outline: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    flex: 1;  /* flex-grow */
+    border: none;
+    background-color: white;
+}
+#input-form button{
+    right: 0;
+    background-color: white;
+    top: 0;
+    border: none;
+    height: 2.5rem;
+}
+#input-form button img{
+    height: 90%;
+    aspect-ratio: 1;
+}
+
+#todo-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding-block: 10px;
+    gap: 8px;
+    /* border: 2px solid green; */
+    height: 100%;
+    max-height: 400px;
+    overflow: auto;
+}
+.todo-task{
+    display: flex;
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.todo-task .todo-task-label{
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* text-wrap: nowrap; */
+}
+.todo-task .todo-task-status{
+    width: 24px;
+}
+.todo-task .todo-task-delete{
+    width: 24px;
+}
